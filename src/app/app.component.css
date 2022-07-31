@@ -1,0 +1,81 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.list
+{
+border-right: 1px solid rgba(48, 48, 48, 0.2) !important;
+margin-top: 3px;
+}
+.list ul
+{
+  list-style: none;
+
+}
+.list ul .active
+{
+  background-color: #E8EAF6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  color: black;
+
+}
+.list ul .lii
+{
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.ddd .x
+{
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.ddd i
+{
+  margin-right: 6px;
+  cursor: pointer;
+}
+ul li
+{
+  list-style: none;
+}
+input[type='checkbox']
+{
+  background-color: blue;
+
+}
+.mt
+{
+  margin: 150px;
+  padding: 50px;
+
+}
+.mmmm
+{
+  margin-top: 50px;
+  background-color: rgba(0, 0,0, 0.8);
+
+}
+.item
+{
+
+  text-align: center;
+}
+.rrr
+{
+  text-align: center;
+
+}
+.sss
+{
+  color: white;
+}
+.www
+{
+  background-color: darkslategrey;
+  color: white;
+}

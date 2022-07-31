@@ -1,0 +1,101 @@
+
+
+
+<!-- sidebar -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 www">
+      <div class="list ">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home me-2"></i>impressions</a>
+          </li>
+          <div class="ddd d-flex justify-content-between">
+            <li class="lii"><i class="fa-solid fa-computer-mouse"></i>clicks</li>
+            <i class="x mx-4 mb-1 fa-solid fa-angle-down"></i>
+
+          </div>
+          <div class="ddd d-flex justify-content-between">
+            <li class="lii"><i class="fa-solid fa-list-check"></i>avg.cpc	</li>
+            <i class="x mx-4 mb-1 fa-solid fa-angle-down"></i>
+
+          </div>
+          <div class="ddd d-flex justify-content-between">
+            <li class="lii"><i class="fas fa-sign-in me-2"></i> conversions	</li>
+            <i class="x mx-4 mb-1 fa-solid fa-angle-down"></i>
+
+          </div>
+          <div class="ddd d-flex justify-content-between">
+            <li class="lii"><i class="fa-solid fa-user"></i>spent</li>
+            <i class="x mx-4 mb-1 fa-solid fa-angle-down"></i>
+
+          </div>
+          <div class="ddd">
+            <li class="lii"><i class="fa-solid fa-right-from-bracket"></i>cr</li>
+
+
+          </div>
+          <div class="ddd">
+            <li class="lii"><i class="fa-solid fa-user-group"></i>saleamount</li>
+
+
+          </div>
+
+
+
+
+
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="col-lg-10">
+      <div class="row text-white ">
+
+
+        <div>
+          <div *ngFor="let item of data" class="bg-dark  rrr">
+            <input (change)="ngOnChanges()" type="checkbox" name="{{item.name}}" id="item.name" [(ngModel)]="item.checked">
+            <label for="item.name">{{item.name}}</label>
+
+          </div>
+        </div>
+<table class="table table-dark bg-info mt-5 text-center sss">
+  <thead class="bg-dark">
+    <th *ngFor="let item of data">{{item.name}}</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td *ngFor="let item of data">
+        {{item.value}}
+
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let item of data">
+        {{item.value}}
+
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let item of data">
+        {{item.value}}
+
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let item of data">
+        {{item.value}}
+
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let item of data">
+        {{item.value}}
+
+      </td>
+    </tr>
+  </tbody>
+</table>
