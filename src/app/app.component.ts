@@ -9,13 +9,13 @@ export class AppComponent implements OnInit {
   title = 'my-app';
 
   data:any =[
-    {checked:false, value:0 , name:'impressions'},
-    {checked:false, value:0 , name:'clicks'},
-    {checked:false, value:0 , name:'avg.cpc'},
-    {checked:false, value:0 , name:'conversions'},
-    {checked:false, value:0 , name:'spent'},
-    {checked:false, value:0 , name:'cr'},
-    {checked:false, value:0 , name:'saleamount'},
+    {checked:true, value:1 , name:'impressions'},
+    {checked:true, value:2 , name:'clicks'},
+    {checked:true, value:3 , name:'avg.cpc'},
+    {checked:true, value:4 , name:'conversions'},
+    {checked:true, value:5 , name:'spent'},
+    {checked:true, value:6 , name:'cr'},
+    {checked:true, value:7 , name:'saleamount'},
 
 
 
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
   }
   ngOnChanges() {
-    console.log(this.data);
+    
 
     this.data.map((item: {checked:any , value:number ;}) =>
     {
