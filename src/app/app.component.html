@@ -1,6 +1,3 @@
-
-
-
 <!-- sidebar -->
 
 <div class="container-fluid">
@@ -57,45 +54,25 @@
 
         <div>
           <div *ngFor="let item of data" class="bg-dark  rrr">
-            <input (change)="ngOnChanges()" type="checkbox" name="{{item.name}}" id="item.name" [(ngModel)]="item.checked">
+            <input  type="checkbox" name="{{item.name}}" id="item.name" [(ngModel)]="item.checked">
             <label for="item.name">{{item.name}}</label>
 
           </div>
         </div>
 <table class="table table-dark bg-info mt-5 text-center sss">
   <thead class="bg-dark">
-    <th *ngFor="let item of data">{{item.name}}</th>
+    <th *ngFor="let item of data"><h4 *ngIf="item.checked">{{item.name}}</h4></th>
   </thead>
   <tbody>
-    <tr>
+    <tr *ngFor="let item of data">
       <td *ngFor="let item of data">
-        {{item.value}}
+         <p *ngIf="item.checked">  {{item.value}}</p>
 
       </td>
     </tr>
-    <tr>
-      <td *ngFor="let item of data">
-        {{item.value}}
 
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let item of data">
-        {{item.value}}
-
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let item of data">
-        {{item.value}}
-
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let item of data">
-        {{item.value}}
-
-      </td>
-    </tr>
   </tbody>
 </table>
+
+
+
